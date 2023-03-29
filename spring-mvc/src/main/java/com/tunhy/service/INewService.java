@@ -2,8 +2,14 @@ package com.tunhy.service;
 
 import java.util.List;
 
-import com.tunhy.model.NewModel;
+import org.springframework.data.domain.Pageable;
+
+import com.tunhy.dto.NewDTO;
 
 public interface INewService {
-	List<NewModel> findAll();
+	List<NewDTO> findAll(Pageable pageable);
+	int getTotalItem();
+	NewDTO findById(long id);
+	NewDTO save(NewDTO dto);
+	void delete(long[] ids);
 }

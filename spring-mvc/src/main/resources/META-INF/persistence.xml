@@ -4,5 +4,6 @@
         <class>com.tunhy.entity.NewEntity</class>
         <class>com.tunhy.entity.UserEntity</class>
         <class>com.tunhy.entity.RoleEntity</class>
+        <class>com.tunhy.entity.CategoryEntity</class>
     </persistence-unit>
 </persistence>
